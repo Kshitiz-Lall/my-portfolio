@@ -1,6 +1,7 @@
 // Layout.js
 import React from "react";
 import { AppBar, Toolbar, Typography, Container, Box } from "@mui/material";
+import Footer from "../Components/Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -11,18 +12,7 @@ const Layout = ({ children }) => {
         </Toolbar>
       </AppBar>
       <Container>{children}</Container>
-      <Box
-        component="footer"
-        sx={{
-          py: 3,
-          px: 2,
-          mt: "auto",
-          backgroundColor: "background.paper",
-          textAlign: "center",
-        }}
-      >
-        Footer content here
-      </Box>
+      <Footer/>
     </div>
   );
 };
