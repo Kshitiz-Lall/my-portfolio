@@ -11,24 +11,26 @@ import {
   Modal,
   Box,
 } from "@mui/material";
+import HIPOne from "../../Assets/hipone.png"
+import Dashboard from "../../Assets/dashboard.png"
+import CCDAViewer from "../../Assets/CCDA Viewer.png"
 
 const projects = [
   {
-    title: "Project 1",
-    description: "Description of Project 1. More details about Project 1...",
-    imageUrl: "path_to_image1.jpg", // Replace with the actual path to your image
+    title: "HIP ONE",
+    description: "HIP One is the leading intelligence platform powered by Gen AI tailored specifically for healthcare built securely to converse with built-in privacy.",
+    imageUrl: HIPOne, // Replace with the actual path to your image
   },
   {
-    title: "Project 2",
-    description: "Description of Project 2. More details about Project 2...",
-    imageUrl: "path_to_image2.jpg", // Replace with the actual path to your image
+    title: "HIP ONE Dashboard",
+    description: "This is the Dashboard for HIP One",
+    imageUrl: Dashboard, // Replace with the actual path to your image
   },
   {
-    title: "Project 3",
-    description: "Description of Project 3. More details about Project 3...",
-    imageUrl: "path_to_image3.jpg", // Replace with the actual path to your image
+    title: "CCDA Viewer",
+    description: "The C-CDA document will be temporarily rendered for this session only. The Genzeon's HIP server will not retain any content related to this C-CDA once the session is closed.",
+    imageUrl: CCDAViewer, // Replace with the actual path to your image
   },
-  // Add more projects as needed
 ];
 
 const Project = () => {
