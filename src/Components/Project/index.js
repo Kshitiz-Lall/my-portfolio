@@ -1,4 +1,3 @@
-// Portfolio.js
 import React, { useState } from "react";
 import {
   Container,
@@ -11,25 +10,28 @@ import {
   Modal,
   Box,
 } from "@mui/material";
-import HIPOne from "../../Assets/hipone.png"
-import Dashboard from "../../Assets/dashboard.png"
-import CCDAViewer from "../../Assets/CCDA Viewer.png"
+import HIPOne from "../../Assets/hipone.png";
+import Dashboard from "../../Assets/dashboard.png";
+import CCDAViewer from "../../Assets/CCDA Viewer.png";
 
 const projects = [
   {
     title: "HIP ONE",
-    description: "HIP One is the leading intelligence platform powered by Gen AI tailored specifically for healthcare built securely to converse with built-in privacy.",
-    imageUrl: HIPOne, // Replace with the actual path to your image
+    description:
+      "HIP One is the leading intelligence platform powered by Gen AI tailored specifically for healthcare built securely to converse with built-in privacy.",
+    imageUrl: HIPOne,
   },
   {
     title: "HIP ONE Dashboard",
-    description: "This is the Dashboard for HIP One",
-    imageUrl: Dashboard, // Replace with the actual path to your image
+    description:
+      "Welcome to the heartbeat of your healthcare operations – the Health Intelligence Platform (HIP) Dashboard. Our HIP Dashboard is a dynamic and user-centric interface designed to empower healthcare professionals with real-time insights, streamlined workflows, and actionable data at their fingertips.",
+    imageUrl: Dashboard,
   },
   {
     title: "CCDA Viewer",
-    description: "The C-CDA document will be temporarily rendered for this session only. The Genzeon's HIP server will not retain any content related to this C-CDA once the session is closed.",
-    imageUrl: CCDAViewer, // Replace with the actual path to your image
+    description:
+      "A CCDA (Consolidated Clinical Document Architecture) viewer is a specialized software tool designed to interpret and display patient health information in the form of CCDA documents. CCDA is an XML-based standard for structuring and exchanging electronic health records (EHRs) and clinical documents.",
+    imageUrl: CCDAViewer,
   },
 ];
 
@@ -94,9 +96,16 @@ const Project = () => {
             border: "2px solid #000",
             boxShadow: 24,
             p: 4,
+            textAlign: "center", // Center align the content
           }}
         >
           <Typography variant="h6">{selectedProject?.title}</Typography>
+          <img
+            src={selectedProject?.imageUrl}
+            alt={selectedProject?.title}
+            style={{ maxWidth: "100%" }}
+          />{" "}
+          {/* Show the image */}
           <Typography variant="body2">
             {selectedProject?.description}
           </Typography>

@@ -1,5 +1,5 @@
+import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
-import { Box, Typography } from "@mui/material";
 import React from "react";
 
 const Introduction = () => {
@@ -23,10 +23,19 @@ const Introduction = () => {
         backgroundColor: "rgba(255, 255, 255, 0.5)", // Add a semi-transparent white background
       }}
     >
-      <Typography variant="h3" align="center">Hi!</Typography>
-      <Typography variant="h2" align="center">I am</Typography>
-      <Typography variant="h2" align="center">Kshitiz.</Typography>
-      <Typography variant="body1" align="center">A React developer based in India. I hope my 1-year experience of research and visual design can be helpful for your project.</Typography>
+      <Typography variant="h3" align="center">
+        Hi!
+      </Typography>
+      <Typography variant="h2" align="center">
+        I am
+      </Typography>
+      <Typography variant="h2" align="center">
+        Kshitiz.
+      </Typography>
+      <Typography variant="body1" align="center">
+        A React developer based in India. I hope my 1-year experience of
+        research and visual design can be helpful for your project.
+      </Typography>
     </motion.div>
   );
 };
