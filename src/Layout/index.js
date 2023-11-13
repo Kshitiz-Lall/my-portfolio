@@ -5,14 +5,14 @@ import Footer from "../Components/Footer";
 const Layout = ({ children }) => {
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
           <Typography variant="h6">Kshitiz</Typography>
-          <Box sx={{ flexGrow: 1 }} /> 
+          <Box sx={{ flexGrow: 1 }} />
         </Toolbar>
       </AppBar>
       <Container>{children}</Container>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

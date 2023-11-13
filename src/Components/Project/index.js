@@ -49,9 +49,14 @@ const Project = () => {
   };
 
   return (
-    <Container>
+    <Container
+      sx={{
+        mt: 2,
+        mb: 2,
+      }}
+    >
       <Typography variant="h4" gutterBottom>
-        My Portfolio
+        Projects{" "}
       </Typography>
       <Grid container spacing={3}>
         {projects.map((project, index) => (

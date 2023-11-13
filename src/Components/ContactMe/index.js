@@ -19,27 +19,29 @@ const ContactMe = () => {
   };
 
   return (
-    <Box sx={{ m: 2, p: 2, border: 1, borderColor: "secondary.main" }}>
-      <Container>
-        <Typography variant="h4" gutterBottom>
-          My Portfolio
-        </Typography>
-        <form onSubmit={handleSubmit}>
-          <Box sx={{ mb: 2 }}>
-            <TextField label="Full Name" fullWidth />
-          </Box>
-          <Box sx={{ mb: 2 }}>
-            <TextField label="Email" fullWidth />
-          </Box>
-          <Box sx={{ mb: 2 }}>
-            <TextField label="Message" multiline rows={5} fullWidth />
-          </Box>
-          <Button type="submit" variant="contained">
-            Submit
-          </Button>
-        </form>
-      </Container>
-    </Box>
+    <Container
+      sx={{
+        mt: 2,
+      }}
+    >
+      <Typography variant="h4" gutterBottom>
+        Contact Me
+      </Typography>
+      <form onSubmit={handleSubmit}>
+        <Box sx={{ mb: 2 }}>
+          <TextField label="Full Name" fullWidth />
+        </Box>
+        <Box sx={{ mb: 2 }}>
+          <TextField label="Email" fullWidth />
+        </Box>
+        <Box sx={{ mb: 2 }}>
+          <TextField label="Message" multiline rows={5} fullWidth />
+        </Box>
+        <Button type="submit" variant="contained">
+          Submit
+        </Button>
+      </form>
+    </Container>
   );
 };
 

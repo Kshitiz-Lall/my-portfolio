@@ -1,5 +1,14 @@
-import { Card, CardContent, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+  Modal,
+  Typography,
+} from "@mui/material";
+import React, { useState } from "react";
 
 const hobbies = [
   {
@@ -42,10 +51,31 @@ const hobbies = [
 ];
 
 const Hobby = () => {
+  const [open, setOpen] = useState(false);
+  const [modalContent, setModalContent] = useState({
+    title: "",
+    description: "",
+  });
+
+  const handleOpen = (title, description) => {
+    setModalContent({ title, description });
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <Container>
+    <Container
+      sx={{
+        mt: 2,
+        mb: 2,
+      }}
+    >
       <Typography variant="h4" gutterBottom>
-        My Hobbies
+        {" "}
+        My Hobbies{" "}
       </Typography>
       <Grid container spacing={3}>
         {hobbies.map((project, index) => (
@@ -60,14 +90,49 @@ const Hobby = () => {
                 <Typography variant="h6">{project.title}</Typography>
                 <Typography variant="body2">
                   {project.description.length > 20
-                    ? `${project.description.substring(0, 500)}...`
+                    ? `${project.description.substring(0, 100)}...`
                     : project.description}
                 </Typography>
+                <Button
+                  onClick={() => handleOpen(project.title, project.description)}
+                  color="secondary"
+                  size="medium"
+                  variant="outlined"
+                >
+                  Read More
+                </Button>
               </CardContent>
             </Card>
           </Grid>
         ))}
       </Grid>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: 400,
+            bgcolor: "background.paper",
+            border: "2px solid #000",
+            boxShadow: 24,
+            p: 4,
+          }}
+        >
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            {modalContent.title}
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            {modalContent.description}
+          </Typography>
+        </Box>
+      </Modal>
     </Container>
   );
 };
