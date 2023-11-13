@@ -15,7 +15,8 @@ const hobbies = [
     title: "Gaming Enthusiast",
     description:
       "As a passionate gaming enthusiast, I find solace in immersing myself in captivating virtual worlds. From conquering challenging quests to connecting with online communities, gaming offers me the perfect escape into exciting realms of adventure and skill. Whether it's strategic decision-making or navigating immersive RPG landscapes, every gaming session is a journey filled with excitement and camaraderie.",
-    imageSource: "https://source.unsplash.com/featured/?gaming",
+    imageSource:
+      "https://images.unsplash.com/photo-1632749042303-7f7a18ed6ff0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Movie Buff",
@@ -27,13 +28,15 @@ const hobbies = [
     title: "Coding Connoisseur",
     description:
       "As a coding connoisseur, I unleash my creativity and problem-solving skills through the art of coding. Whether I'm developing software, building websites, or exploring new programming languages, coding provides me with a fulfilling outlet for my technical prowess and innovative ideas. It's not just a skill; it's a journey of continuous learning and self-expression in the ever-evolving world of technology.",
-    imageSource: "https://source.unsplash.com/featured/?coding",
+    imageSource:
+      "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=2098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Tech Explorer",
     description:
       "Being a tech explorer, I stay on the cutting edge of technology by delving into the latest gadgets, software, and innovations. From exploring virtual reality experiences to experimenting with new programming tools, I indulge my curiosity in the ever-evolving tech landscape. This journey of exploration allows me to embrace the future and stay informed about the transformative power of technology in our daily lives.",
-    imageSource: "https://source.unsplash.com/featured/?technology",
+    imageSource:
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Game Development",
@@ -46,7 +49,22 @@ const hobbies = [
     title: "Anime and Manga Enthusiast",
     description:
       "As an anime and manga enthusiast, I dive into the rich storytelling and unique art styles of Japanese animation and comics. Exploring diverse genres, following captivating narratives, and connecting with a vibrant community of enthusiasts who share my passion is an immersive experience. Each anime and manga adventure becomes a personal journey, filled with creativity, emotion, and the boundless imagination of this captivating art form.",
-    imageSource: "https://source.unsplash.com/featured/?anime",
+    imageSource:
+      "https://images.unsplash.com/photo-1531501410720-c8d437636169?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    title: "Video Editing",
+    description:
+      "Embark on a visual journey with my expertise in video editing. Transform raw footage into cinematic masterpieces through meticulous editing, seamless transitions, and captivating effects. Whether it's a compelling narrative, a dynamic promotional video, or a memorable event, I bring your vision to life. With a keen eye for detail and a passion for storytelling, I enhance the visual appeal of your videos, ensuring they leave a lasting impact. Let's collaborate to create videos that not only meet but exceed your expectations. Your story deserves to be told with creativity and precision.",
+    imageSource:
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    title: "Photo Editing",
+    description:
+      "Step into a world where each photograph is a canvas waiting to be perfected. With my skills in photo editing, I breathe life into your images, enhancing colors, refining details, and creating a visual narrative that resonates. From professional portraits to breathtaking landscapes, every photo receives meticulous attention to ensure it tells a story worth remembering. Whether you seek polished images for personal memories or professional portfolios, I bring out the best in your photographs. Let's collaborate to turn your moments into timeless visual treasures.",
+    imageSource:
+      "https://images.unsplash.com/photo-1620674156044-52b714665d46?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
