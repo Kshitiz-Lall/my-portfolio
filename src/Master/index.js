@@ -6,6 +6,7 @@ import Introduction from "../Components/Introduction";
 import Project from "../Components/Project";
 import Skills from "../Components/Skill";
 import MyTimeline from "../Components/Timeline";
+import Experience from "../Components/Experience";
 
 const Master = () => {
   return (
@@ -15,6 +16,8 @@ const Master = () => {
       <MyTimeline />
       <Divider light />
       <Skills />
+      <Divider light />
+      <Experience />
       <Divider light />
       <Project />
       <Divider light />
