@@ -20,8 +20,8 @@ function Skills() {
   return (
     <Container
       sx={{
-        mt: 2,
-        mb: 2,
+        mt: 4,
+        mb: 4,
       }}
     >
       <Typography variant="h4" gutterBottom>
@@ -30,7 +30,7 @@ function Skills() {
       <Grid container spacing={1}>
         {ProgrammingLanguages.map((skill, index) => (
           <Grid item key={index}>
-            <Chip label={skill} color="secondary" variant="outlined" />
+            <Chip label={skill} color="primary" variant="filled" />
           </Grid>
         ))}
       </Grid>

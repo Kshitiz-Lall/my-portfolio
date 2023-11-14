@@ -9,13 +9,18 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 
 export default function CustomizedTimeline() {
   return (
-    <Box sx={{ m: 2, p: 2 }}>
+    <Container
+      sx={{
+        mt: 2,
+        mb: 2,
+      }}
+    >
       <Typography variant="h4">My Timeline</Typography>
       <Timeline position="alternate">
         <TimelineItem>
@@ -108,6 +113,6 @@ export default function CustomizedTimeline() {
           </TimelineContent>
         </TimelineItem>
       </Timeline>
-    </Box>
+    </Container>
   );
 }

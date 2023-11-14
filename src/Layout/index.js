@@ -1,17 +1,13 @@
-import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import Footer from "../Components/Footer";
+import ResponsiveAppBar from "./AppBar";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <AppBar position="fixed">
-        <Toolbar>
-          <Typography variant="h6">Kshitiz</Typography>
-          <Box sx={{ flexGrow: 1 }} />
-        </Toolbar>
-      </AppBar>
-      <Container>{children}</Container>
+      <ResponsiveAppBar />
+      <Box>{children}</Box>
       <Footer />
     </div>
   );

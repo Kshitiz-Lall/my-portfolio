@@ -56,6 +56,9 @@ export default function Footer() {
           Kshitiz, &nbsp;
           {new Date().getFullYear()} {"."}
         </Typography>
+        <Typography variant="body2" color="textSecondary" align="center">
+          ver 1.5
+        </Typography>
       </Container>
     </Box>
   );

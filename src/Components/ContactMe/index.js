@@ -21,7 +21,8 @@ const ContactMe = () => {
   return (
     <Container
       sx={{
-        mt: 2,
+        mb: 4,
+        mt: 4,
       }}
     >
       <Typography variant="h4" gutterBottom>

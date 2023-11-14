@@ -14,8 +14,8 @@ const Experience = () => {
   return (
     <Container
       sx={{
-        mt: 2,
-        mb: 2,
+        mt: 4,
+        mb: 4,
       }}
     >
       <Typography variant="h4" gutterBottom>

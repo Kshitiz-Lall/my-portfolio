@@ -12,7 +12,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Bebas Neue",
+    fontFamily: "Inter",
   },
   spacing: 8,
   shape: {
