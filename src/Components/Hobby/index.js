@@ -46,7 +46,7 @@ const hobbies = [
       "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Anime and Manga Enthusiast",
+    title: "Anime Enthusiast",
     description:
       "As an anime and manga enthusiast, I dive into the rich storytelling and unique art styles of Japanese animation and comics. Exploring diverse genres, following captivating narratives, and connecting with a vibrant community of enthusiasts who share my passion is an immersive experience. Each anime and manga adventure becomes a personal journey, filled with creativity, emotion, and the boundless imagination of this captivating art form.",
     imageSource:
@@ -108,7 +108,7 @@ const Hobby = () => {
                 <Typography variant="h6">{project.title}</Typography>
                 <Typography variant="body2">
                   {project.description.length > 20
-                    ? `${project.description.substring(0, 100)}...`
+                    ? `${project.description.substring(0, 50)}...`
                     : project.description}
                 </Typography>
                 <Button

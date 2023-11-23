@@ -1,4 +1,4 @@
-import { Chip, Container, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import * as React from "react";
 
 const Experience = () => {
@@ -12,23 +12,29 @@ const Experience = () => {
   const remainingDays = experienceInDays % 365;
 
   return (
-    <Container
+    <Box
       sx={{
-        mt: 4,
-        mb: 4,
+        p: 4,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        bgcolor: "black",
+        backgroundSize: "cover",
       }}
     >
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{ color: "white" }}>
         Experience
       </Typography>
-      <Typography variant="body1"> Since 3rd May 2023</Typography>
-      <Chip
-        variant="body1"
-        label={`Total Experience: ${experienceInYears} years ${
+      <Typography variant="body2" sx={{ color: "white" }}>
+        Since 3rd May 2023
+      </Typography>
+      <Typography variant="h6" sx={{ color: "white" }}>
+        {`Total Experience: ${experienceInYears} years ${
           remainingDays > 0 ? `and ${remainingDays} days` : ""
         }`}
-      />
-    </Container>
+      </Typography>
+    </Box>
   );
 };
 

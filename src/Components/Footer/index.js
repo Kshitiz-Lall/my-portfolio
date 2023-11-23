@@ -13,50 +13,49 @@ export default function Footer() {
         py: 3,
         px: 2,
         mt: 3,
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light"
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
+        bgcolor: "black",
       }}
     >
       <Container maxWidth="sm">
-        <Typography variant="body1">Connect with me:</Typography>
+        <Typography sx={{ color: "white" }} variant="body1">
+          Connect with me:
+        </Typography>
         <Box sx={{ display: "flex", gap: 2 }}>
           <Link
             href="https://www.instagram.com/kshitizlall/"
             color="inherit"
             target="_blank"
           >
-            <Instagram />
+            <Instagram sx={{ color: "white" }} />
           </Link>
           <Link
             href="https://www.linkedin.com/in/kshitizlall/"
             color="inherit"
             target="_blank"
           >
-            <LinkedIn />
+            <LinkedIn sx={{ color: "white" }} />
           </Link>
           <Link
             href="https://www.facebook.com/kshitiz.shittu/"
             color="inherit"
             target="_blank"
           >
-            <Facebook />
+            <Facebook sx={{ color: "white" }} />
           </Link>
           <Link
             href="https://github.com/Kshitiz-Lall"
             color="inherit"
             target="_blank"
           >
-            <GitHub />
+            <GitHub sx={{ color: "white" }} />
           </Link>
         </Box>
-        <Typography variant="body2" color="textSecondary" align="center">
+        <Typography variant="body2" color="white" align="center">
           {"Copyright © "}
           Kshitiz, &nbsp;
           {new Date().getFullYear()} {"."}
         </Typography>
-        <Typography variant="body2" color="textSecondary" align="center">
+        <Typography variant="body2" color="white" align="center">
           ver 1.5
         </Typography>
       </Container>
